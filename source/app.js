@@ -1,1 +1,1 @@
-angular.module("KarmaDemo", ["ngResource"]);
+angular.module("KarmaDemo", ["ngResource", "ui.router"]);
