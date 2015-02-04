@@ -1,0 +1,16 @@
+{
+  "name": "KarmaDemo",
+  "version": "0.0.0",
+  "authors": [
+    "David Robbins <robbins.david@gmail.com>"
+  ],
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
