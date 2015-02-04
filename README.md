@@ -51,6 +51,14 @@ Note: Although I won't put distinct steps in place for commiting your progress i
         'bower_components/angular-touch/angular-touch.js',
         'bower_components/angular-ui-router/release/angular-ui-router.js',
 
+* Configure `npm test` to run Karma in `package.json`
+
+        ...
+        "scripts": {
+          "test": "node .\\node_modules\\karma\\bin\\karma start"
+        },
+        ...
+
 [1]: https://github.com/npm/npm/wiki/Troubleshooting#upgrading-on-windows
 [2]: http://bower.io/
 [3]: https://angularjs.org/
