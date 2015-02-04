@@ -10,23 +10,46 @@
 
 Note: Although I won't put distinct steps in place for commiting your progress into `git` or your source control tool of choice, feel free to do so liberally.
 
-1. Create a new folder
-2. Initialize your `package.json` file. Use defaults.
+* Create a new folder
+* Initialize your `package.json` file. Use defaults.
 
         npm init
 
-3. Initialize `bower.json`. Use defaults, except optionally marking the package as "private".
+* Initialize `bower.json`. Use defaults, except optionally marking the package as "private".
 
         bower init
 
-4. Install [Angular][3] and a few other packages using `bower`.
+* Install [Angular][3] and a few other packages using `bower`.
 
         bower install --save angular json3 es5-shim angular-animate angular-cookies angular-resource angular-route angular-sanitize angular-touch angular-ui-router
         bower install --save-dev angular-mocks angular-scenario
 
-5. Install [Karma][4] and a few packages using `npm`.
+* Install [Karma][4] and a few packages using `npm`.
 
         npm install --save-dev karma karma-jasmine karma-phantomjs-launcher
+
+* Initialize Karma with the following responses
+        
+        node .\node_modules\karma\bin\karma init karma.conf.js
+
+    * `jasmine` as the testing framework.
+    * `no` for RequireJS
+    * `PhantomJS` for browser to capture automatically
+    * `tests/**/*Spec.js` and `source/**/*.js` for file locations
+    * leave file exclusions empty
+    * `yes` for watching files
+
+* Insert the following at the top of the "files" section of `karma.conf.js`
+
+        'bower_components/angular/angular.js',
+        'bower_components/angular-mocks/angular-mocks.js',
+        'bower_components/angular-animate/angular-animate.js',
+        'bower_components/angular-cookies/angular-cookies.js',
+        'bower_components/angular-resource/angular-resource.js',
+        'bower_components/angular-route/angular-route.js',
+        'bower_components/angular-sanitize/angular-sanitize.js',
+        'bower_components/angular-touch/angular-touch.js',
+        'bower_components/angular-ui-router/release/angular-ui-router.js',
 
 [1]: https://github.com/npm/npm/wiki/Troubleshooting#upgrading-on-windows
 [2]: http://bower.io/
