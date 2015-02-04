@@ -59,6 +59,8 @@ Note: Although I won't put distinct steps in place for commiting your progress i
         },
         ...
 
+* Run `npm test`. Put test files in `tests/` and source files in `source/`
+
 [1]: https://github.com/npm/npm/wiki/Troubleshooting#upgrading-on-windows
 [2]: http://bower.io/
 [3]: https://angularjs.org/
