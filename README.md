@@ -24,6 +24,11 @@ Note: Although I won't put distinct steps in place for commiting your progress i
         bower install --save angular json3 es5-shim angular-animate angular-cookies angular-resource angular-route angular-sanitize angular-touch angular-ui-router
         bower install --save-dev angular-mocks angular-scenario
 
+5. Install [Karma][4] and a few packages using `npm`.
+
+        npm install --save-dev karma karma-jasmine karma-phantomjs-launcher
+
 [1]: https://github.com/npm/npm/wiki/Troubleshooting#upgrading-on-windows
 [2]: http://bower.io/
 [3]: https://angularjs.org/
+[4]: http://karma-runner.github.io/0.12/index.html
