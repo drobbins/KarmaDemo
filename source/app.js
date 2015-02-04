@@ -1,1 +1,1 @@
-angular.module("KarmaDemo", []);
+angular.module("KarmaDemo", ["ngResource"]);
