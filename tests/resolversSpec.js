@@ -10,8 +10,12 @@ describe("Resolvers", function () {
         invoke = $injector.invoke;
     }));
 
-    testResolver = function (resolver, service, method, value) {
-
+    var testResolver = function(resolver, service, method, value) {
+        var result, spy;
+        spy = spyOn(service, method).and.returnValue(value);
+        result = invoke(resolver);
+        expect(result).toBe(value);
+        return expect(spy).toHaveBeenCalled();
     };
 
     it("karmaListResolver resolves a list of the current karmas", function () {
