@@ -1,5 +1,7 @@
 # Karma Demo
 
+A demo using [Karma][4] to test [Angular][3], perhaps notably sans-Grunt. Definitely sans-Yeoman.
+
 ## Prerequisites
 
 * [NodeJS](http://nodejs.org/). This tutorial was written with Node 0.10.33 and npm 2.1.18. Later minor versions should be ok.
@@ -71,4 +73,4 @@ Note: Although I won't put distinct steps in place for commiting your progress i
 [1]: https://github.com/npm/npm/wiki/Troubleshooting#upgrading-on-windows
 [2]: http://bower.io/
 [3]: https://angularjs.org/
-[4]: http://karma-runner.github.io/0.12/index.html
+[4]: http://karma-runner.github.io/
