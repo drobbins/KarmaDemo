@@ -2,7 +2,14 @@
 
 ## Prerequisites
 
-* [NodeJS](http://nodejs.org/)
+* [NodeJS](http://nodejs.org/). This tutorial was written with Node 0.10.33 and npm 2.1.18. Later minor versions should be ok.
+      ```shell
+      λ npm -v
+      2.1.18
+      
+      λ node -v
+      v0.10.33
+      ```
     * You may need to upgrade npm. `npm update -g npm` works on most Unix-type machines. [Windows can be more complicated][1]
 * [Bower][2]. Not strictly necessary, but very useful for managing front-end libraries.
 
